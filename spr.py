@@ -59,7 +59,7 @@ def write_output(result_data):
             row.update(values)
             writer.writerow(row)
     
-    print("File written successfully!")
+    print("CSV file written successfully!")
 
 # Read the input CSV file
 with open('2023.csv', 'r', encoding='utf-8') as csvfile:
