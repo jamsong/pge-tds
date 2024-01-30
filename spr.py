@@ -4,6 +4,9 @@
 import csv
 from datetime import datetime
 
+filename = '2023.csv'
+fileoutput = '2023out.csv'
+
 def calculate_usage(data):
     result_data = {}
     
@@ -45,7 +48,7 @@ def calculate_usage(data):
     return result_data
 
 def write_output(result_data):
-    with open('output23.csv', 'w', newline='') as csvfile:
+    with open(fileoutput, 'w', newline='') as csvfile:
         fieldnames = ['Date', 'DayOfWeek', '00:00-06:59', '07:00-11:59', '12:00-16:59', '17:00-20:59', '21:00-23:59', 'Total']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
@@ -62,7 +65,7 @@ def write_output(result_data):
     print("CSV file written successfully!")
 
 # Read the input CSV file
-with open('2023.csv', 'r', encoding='utf-8') as csvfile:
+with open(filename, 'r', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     data = list(reader)
 
