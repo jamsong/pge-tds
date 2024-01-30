@@ -15,7 +15,6 @@ def calculate_usage(data):
         if date_str == 'DATE':
             continue  # Skip header
         
-        # Convert usage and cost to float
         usage = float(usage_str)
         
         # Parse date and time
@@ -50,12 +49,10 @@ def write_output(result_data):
         fieldnames = ['Date', 'DayOfWeek', '00:00-06:59', '07:00-11:59', '12:00-16:59', '17:00-20:59', '21:00-23:59', 'Total']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
-        # Write header
         writer.writeheader()
         
         # Write data
         for date, values in result_data.items():
-            # Round the "Total" value to two significant digits
             values["Total"] = round(values["Total"], 2)
             
             row = {'Date': date}
