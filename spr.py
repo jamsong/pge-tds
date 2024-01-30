@@ -49,7 +49,7 @@ def calculate_usage(data):
 
 def write_output(result_data):
     with open(fileoutput, 'w', newline='') as csvfile:
-        fieldnames = ['Date', 'DayOfWeek', '00:00-06:59', '07:00-11:59', '12:00-16:59', '17:00-20:59', '21:00-23:59', 'Total']
+        fieldnames = ['Date', 'Day', 'OffPeak\n00:00-06:59\n$0.0839', 'MidPeak\n07:00-11:59\n$0.1577', 'MidPeak\n12:00-16:59\n$0.1577', 'OnPeak\n17:00-20:59\n$0.4111', 'OffPeak\n21:00-23:59\n$0.0839', 'Total']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
         writer.writeheader()
