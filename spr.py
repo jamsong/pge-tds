@@ -1,5 +1,9 @@
-# Song Power Reader
-# James Song 2023-Jan-30
+"""
+Song Power Reader
+James Song 2023-Jan-30
+
+Read PGE usage data and segment into daily time of day segments
+"""
 
 import csv
 from datetime import datetime
