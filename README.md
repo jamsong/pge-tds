@@ -5,7 +5,7 @@ Read usage data from Portland General Electric to create a CSV file that shows t
 Run ./songPower pgn_filename.csv optional_output_filename
 
 <h2>Example Output</h2>
-Date,DayofWeek,00:00-06:59,07:00-11:59,12:00-16:59,17:00-20:59,21:00-23:59,Total<br>
+Date,DayOfWeek,00:00-06:59,07:00-11:59,12:00-16:59,17:00-20:59,21:00-23:59,Total<br>
 2021-01-01,Fri,10.11,7.0,38.88,8.88,5.12,69.99<br>
 2021-01-02,Sat,9.32,10.95,9.59,11.57,5.23,46.66<br>
 2021-01-03,Sun,8.94,7.45,9.45,9.04,5.02,39.9
