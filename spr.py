@@ -2,7 +2,7 @@
 Song Power Reader
 James Song 2023-Jan-30
 
-Read PGE usage data and segment into daily time of day segments
+Read PGE usage data and segment into daily Time of Day
 """
 
 import csv
