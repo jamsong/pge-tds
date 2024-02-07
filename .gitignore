@@ -6,3 +6,6 @@ data/pgn_electric_usage_interval_data_4540771060_1_2022-01-01_to_2022-12-31.csv
 data/pgn_electric_usage_interval_data_4540771060_1_2023-01-01_to_2023-12-31.csv
 2023short.csv
 2023short_out.csv
+jan24bill_out.csv
+jan24bill.csv
+.DS_Store
